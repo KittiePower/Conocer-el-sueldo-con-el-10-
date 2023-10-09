@@ -1,0 +1,37 @@
+
+/******************************************************************************
+Conocer el sueldo con el 10%
+Nombre: Elisa Michelle Medina Vázquez
+Fecha:160422
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //variables
+    float venta1,venta2,venta3,comisionesT,pagoTotal;
+    int comision=0.10,sueldoFij=4300;
+    
+    //proceso
+    cout<<"Cuanto se hizo en la primera venta? ";
+    cin>>venta1;
+    venta1=venta1+comision;
+    cout<<"Cuanto se hizo en la segunda venta? ";
+    cin>>venta2;
+    venta2=venta2+comision;
+    cout<<"Cuanto se hizo en la tercera venta? ";
+    cin>>venta3;
+    venta3=venta3+comision;
+    
+    comisionesT=(venta1+venta2+venta3)*0.10;
+    cout<<"El total de dinero que se recibe por las tres comisiones es "<<comisionesT<<endl;
+    
+    pagoTotal=comisionesT+sueldoFij;
+    cout<<"El pago total del mes es "<<pagoTotal<<endl;
+    return 0;
+}
+
+
+
